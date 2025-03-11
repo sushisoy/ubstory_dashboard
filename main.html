@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style/main.css">
+    <link rel="stylesheet" type="text/css" href="./style/fonts.css">
+    <link rel="stylesheet" type="text/css" href="./style/reset.css">
+    <link rel="stylesheet" type="text/css" href="./style/common.css">
+    <script src="./js/main.js" defer></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <title>Document</title>
+</head>
+<main>
+    <div class="inner">
+        <h1 class="logo cursor-pointer">
+            <span class="blind">bizstory</span>
+        </h1>
+        <aside>
+            <div class="sidebar">
+                <a href="">비즈스토리 퀵 가이드</a>
+                <a href="">비즈스토리 건의사항</a>
+            </div>
+            <button type="button" class="btn_side cursor-pointer">
+                <img src="./assets/images/double-arrow.svg" alt="">
+            </button>
+            <button type="button" class="btn_menu cursor-pointer">
+                <img src="./assets/images/btn-hamburger.svg" alt="">
+            </button>
+        </aside>
+        <div class="main">
+            <nav>
+                <div class="nav_inner">
+                    <button type="button" class="profile cursor-pointer">
+                        <img src="./assets/images/no-profile.svg" alt="">
+                    </button>
+                </div>
+            </nav>
+            <div class="contents">
+                <!-- 시스템 점검 -->
+                <div class="system_notice">
+                    <img class="ico_notice" src="./assets/images/volume-notice.svg"></img>
+                    <p>시스템 점검
+                        <strong>06</strong>
+                        <strong>01</strong>
+                        <strong>06</strong>
+                        <strong>02</strong>
+                    </p>
+                    <a>바로가기</a>
+                </div>
+                <div class="welcome">
+                    <p>
+                        <span>제 2 관리팀</span>
+                        <span>김길동</span>
+                        <span>사장</span>
+                        <span class="color_grey">님, 반갑습니다!</span>
+                    </p>
+                    <div class="date_box">
+                        <span>화</span>
+                        <span>2025</span>
+                        <span>02</span>
+                        <span>04</span>
+                        <span>11:35</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="container_left">
+                        <!-- 현황 보드 -->
+                        <div class="board_wrap">
+                            <div class="board">
+                                <div class="top first">
+                                    <img src="./assets/images/notice.svg" alt="">
+                                    <span>미처리</span>
+                                </div>
+                                <div class="bottom first">
+                                    <div class="wrap">
+                                        <span class="subject">오늘</span>
+                                        <span class="info">
+                                            <strong>8</strong>건
+                                        </span>
+                                    </div>
+                                    <div class="wrap">
+                                        <span class="subject">이번 달</span>
+                                        <span class="info">
+                                            <strong>8</strong>건
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="board">
+                                <div class="top second">
+                                    <img src="./assets/images/plus.svg" alt="">
+                                    <span class="i_add">신규접수</span>
+                                </div>
+                                <div class="bottom second">
+                                    <div class="wrap">
+                                        <span class="subject">오늘</span>
+                                        <span class="info">
+                                            <strong>8</strong>건
+                                        </span>
+                                    </div>
+                                    <div class="wrap">
+                                        <span class="subject">이번 달</span>
+                                        <span class="info">
+                                            <strong>8</strong>건
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="board">
+                                <div class="top third">
+                                    <img src="./assets/images/ongoing.svg" alt="">
+                                    <span>작업진행</span>
+                                </div>
+                                <div class="bottom third">
+                                    <div class="wrap">
+                                        <span class="subject">오늘</span>
+                                        <span class="info">
+                                            <strong>8</strong>건
+                                        </span>
+                                    </div>
+                                    <div class="wrap">
+                                        <span class="subject">이번 달</span>
+                                        <span class="info">
+                                            <strong>8</strong>건
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="board">
+                                <div class="top last">
+                                    <img src="./assets/images/completed.svg" alt="">
+                                    <span>완료</span>
+                                </div>
+                                <div class="bottom last">
+                                    <div class="wrap">
+                                        <span class="subject">오늘</span>
+                                        <span class="info">
+                                            <strong>8</strong>건
+                                        </span>
+                                    </div>
+                                    <div class="wrap">
+                                        <span class="subject">이번 달</span>
+                                        <span class="info">
+                                            <strong>8</strong>건
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <section class="current_area">
+                            <div class="top">
+                                <div class="wrap">
+                                    <h3>상태별 업무 현황</h3>
+                                    <!-- [D] 활성화 시 : aria-expanded="true" -->
+                                    <div class="dropdown" aria-expanded="false">
+                                        <button type="button" class="btn_dropdown">모든 거래처</button>
+                                        <ul class="dropdown_list">
+                                            <li class="dropdown_item">제1관리팀 김길동 이사</li>
+                                            <li class="dropdown_item">제1관리팀 김길동 이사</li>
+                                            <li class="dropdown_item">제1관리팀 김길동 이사</li>
+                                            <li class="dropdown_item">제1관리팀 김길동 이사</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="">모두 보기</a>
+                            </div>
+                            <!-- mobile dropdown -->
+                            <div class="mobile_dropdown_wrap">
+                                <div class="dropdown_left">
+                                    <button type="button" class="left">제1관리팀 김길동 이사</button>
+                                </div>
+                                <div class="dropdown_right">
+                                    <button type="button" class="right">미처리 업무</button>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <!-- [D] 버튼 클릭 시 "menu" x 좌표 이동 -->
+                                <button type="button" class="btn_next cursor-pointer"></button>
+                                <ul class="menu">
+                                    <li class="active">미처리 업무<span>12</span></li>
+                                    <li>총 처리 업무<span>24</span></li>
+                                    <li>접수 등록<span>8</span></li>
+                                    <li>접수 승인<span>7</span></li>
+                                    <li>작업 진행<span>9</span></li>
+                                    <li>완료 처리<span>9</span></li>
+                                    <li>보류<span>9</span></li>
+                                </ul>
+                                <div class="grid">
+                                    <ul class="grid_header">
+                                        <li>거래처 명</li>
+                                        <li>분류</li>
+                                        <li>제목</li>
+                                        <li>신청인</li>
+                                        <li>상태</li>
+                                        <li>담당자</li>
+                                        <li>등록일</li>
+                                    </ul>
+                                    <div class="grid_body">
+                                        <ul>
+                                            <li>가곡 초등학교</li>
+                                            <li>컴퓨터</li>
+                                            <li class="txt-left">컴퓨터 윈도우 업데이트 렉 걸림 현상</li>
+                                            <li>이비즈 (1-1)</li>
+                                            <!-- [D] 미처리 시 "active" 클래스 추가 -->
+                                            <li class="active">미처리</li>
+                                            <li>제1 관리팀 김길동 이사</li>
+                                            <li>2025.02.03</li>
+                                        </ul>
+                                        <ul>
+                                            <li>가곡 초등학교</li>
+                                            <li>컴퓨터</li>
+                                            <li class="txt-left">컴퓨터 윈도우 업데이트 렉 걸림 현상</li>
+                                            <li>이비즈 (1-1)</li>
+                                            <!-- [D] 미처리 시 "active" 클래스 추가 -->
+                                            <li class="active">미처리</li>
+                                            <li>제1 관리팀 김길동 이사</li>
+                                            <li>2025.02.03</li>
+                                        </ul>
+                                        <ul>
+                                            <li>가곡 초등학교</li>
+                                            <li>컴퓨터</li>
+                                            <li class="txt-left">컴퓨터 윈도우 업데이트 렉 걸림 현상</li>
+                                            <li>이비즈 (1-1)</li>
+                                            <!-- [D] 미처리 시 "active" 클래스 추가 -->
+                                            <li class="active">미처리</li>
+                                            <li>제1 관리팀 김길동 이사</li>
+                                            <li>2025.02.03</li>
+                                        </ul>
+                                        <ul>
+                                            <li>가곡 초등학교</li>
+                                            <li>컴퓨터</li>
+                                            <li class="txt-left">컴퓨터 윈도우 업데이트 렉 걸림 현상</li>
+                                            <li>이비즈 (1-1)</li>
+                                            <!-- [D] 미처리 시 "active" 클래스 추가 -->
+                                            <li class="active">미처리</li>
+                                            <li>제1 관리팀 김길동 이사</li>
+                                            <li>2025.02.03</li>
+                                        </ul>
+                                        <ul>
+                                            <li>가곡 초등학교</li>
+                                            <li>컴퓨터</li>
+                                            <li class="txt-left">컴퓨터 윈도우 업데이트 렉 걸림 현상</li>
+                                            <li>이비즈 (1-1)</li>
+                                            <!-- [D] 미처리 시 "active" 클래스 추가 -->
+                                            <li class="active">미처리</li>
+                                            <li>제1 관리팀 김길동 이사</li>
+                                            <li>2025.02.03</li>
+                                        </ul>
+                                        <ul>
+                                            <li>가곡 초등학교</li>
+                                            <li>컴퓨터</li>
+                                            <li class="txt-left">컴퓨터 윈도우 업데이트 렉 걸림 현상</li>
+                                            <li>이비즈 (1-1)</li>
+                                            <!-- [D] 미처리 시 "active" 클래스 추가 -->
+                                            <li class="active">미처리</li>
+                                            <li>제1 관리팀 김길동 이사</li>
+                                            <li>2025.02.03</li>
+                                        </ul>
+                                        <ul>
+                                            <li>가곡 초등학교</li>
+                                            <li>컴퓨터</li>
+                                            <li class="txt-left">컴퓨터 윈도우 업데이트 렉 걸림 현상</li>
+                                            <li>이비즈 (1-1)</li>
+                                            <!-- [D] 미처리 시 "active" 클래스 추가 -->
+                                            <li class="active">미처리</li>
+                                            <li>제1 관리팀 김길동 이사</li>
+                                            <li>2025.02.03</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="monthly_area">
+                            <div class="top">
+                                <h3>당월 전체 AS 접수 비중</h3>
+                                <div class="date">
+                                    <span>2025</span>
+                                    <span>01</span>
+                                    <span>23</span>
+                                    <span>15</span>
+                                    <span>16</span>
+                                    <span>34</span>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <div class="bar_chart_area">
+                                    <div id="bar-chart"></div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="container_right">
+                        <div class="wrap">
+                            <section class="assignment_area">
+                                <div class="top">
+                                    <div class="wrap">
+                                        <h3>업무 배정 현황</h3>
+                                        <div class="date">
+                                            <span>2025</span>.
+                                            <span>01</span>.
+                                            <span>23</span>
+                                        </div>
+                                    </div>
+                                    <div class="toggle">
+                                        <span>요약</span>
+                                        <input type="checkbox" id="switch" name="switch" class="cursor-pointer"><label for="switch"></label>
+                                        <!-- [D] 토글 스위치 시 "aictve" 클래스 추가 -->
+                                        <span class="active">상세</span>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <!-- [D] 토글로 UI 변경될 때 "is-show" 클래스 추가 -->
+                                    <div class="data details is-show">
+                                        <div class="option_dropdown_area">
+                                            <!-- [D] 활성화 시 : aria-expanded="true" -->
+                                            <div class="option_dropdown_wrap" aria-expanded="false">
+                                                <button type="button" class="option_dropdown_btn">제 2 관리팀</button>
+                                                <ul class="option_dropdown_list">
+                                                    <li class="option_dropdown_item">제 2 관리팀</li>
+                                                    <li class="option_dropdown_item">제 2 관리팀</li>
+                                                </ul>
+                                            </div>
+                                            <div class="option_dropdown_wrap" aria-expanded="false">
+                                                <button type="button" class="option_dropdown_btn">제 2 관리팀</button>
+                                                <ul class="option_dropdown_list">
+                                                    <li class="option_dropdown_item">제 2 관리팀</li>
+                                                    <li class="option_dropdown_item">제 2 관리팀</li>
+                                                </ul>
+                                            </div>
+                                            <div class="option_dropdown_wrap" aria-expanded="false">
+                                                <button type="button" class="option_dropdown_btn">제 2 관리팀</button>
+                                                <ul class="option_dropdown_list">
+                                                    <li class="option_dropdown_item">제 2 관리팀</li>
+                                                    <li class="option_dropdown_item">제 2 관리팀</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <ul class="state">
+                                            <li>
+                                                <span class="subject">총 배정 건 수</span>
+                                                <span class="info"><strong>24</strong>건</span>
+                                            </li>
+                                            <li>
+                                                <span class="subject">진행 중</span>
+                                                <span class="info"><strong>8</strong>건</span>
+                                            </li>
+                                            <li>
+                                                <span class="subject">완료</span>
+                                                <span class="info"><strong>5</strong>건</span>
+                                            </li>
+                                            <li>
+                                                <span class="subject">미처리</span>
+                                                <span class="info"><strong>11</strong>건</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- 요약 현황 UI 작업 예정-->
+                                    <div class="data summary">
+                                        <div class="option_dropdown_area">
+                                            <!-- [D] 활성화 시 : aria-expanded="true" -->
+                                            <div class="option_dropdown_wrap" aria-expanded="false">
+                                                <button type="button" class="option_dropdown_btn">제 2 관리팀</button>
+                                                <ul class="option_dropdown_list">
+                                                    <li class="option_dropdown_item">제 2 관리팀</li>
+                                                    <li class="option_dropdown_item">제 2 관리팀</li>
+                                                </ul>
+                                                <div class="division">
+                                                    <span>배정 건</span>
+                                                    <span>처리 건</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="completed_area">
+                                <div class="top">
+                                    <h3>전체 AS 완료 현황</h3>
+                                    <div class="date">
+                                        <span>2025</span>
+                                        <span>01</span>
+                                        <span>23</span>
+                                        <span class="time">15:</span>
+                                        <span class="time">16:</span>
+                                        <span class="time">34</span>
+                                    </div>
+                                </div>
+                                <div class="info_wrap">
+                                    <span class="bg_grey">접수</span>
+                                    <span><strong>710</strong> 건</span>
+                                    <span class="bg_blue">완료</span>
+                                    <span><strong>320</strong> 건</span>
+                                </div>
+                                <div class="ring_chart">
+                                    <svg viewBox="0 0 120 120" class="chart-gauge" fill="none" stroke-width="2">
+                                        <defs>
+                                            <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                <stop offset="0%" stop-color="red" />
+                                                <stop offset="100%" stop-color="#019EF7;" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle class="chart-gauge-base" r="57.32" cx="60" cy="60"></circle>
+                                        <circle class="chart-gauge-secondary" transform="rotate(-90 60 60)" stroke-dasharray="320 360" stroke-dashoffset="320" r="57.32" cx="60" cy="60"></circle>
+                                        <circle class="chart-gauge-primary" transform="rotate(-90 60 60)" stroke-dasharray="380 10" stroke-dashoffset="180" r="57.32" cx="60" cy="60"></circle>
+                                        <text x="60" y="45" dx="0" dy="1em" class="chart-gauge-label">95.5<tspan class="chart-gauge-units">%</tspan></text>
+                                    </svg>
+                                </div>
+                            </section>
+                        </div>
+                        <section class="notice_area">
+                            <div class="top">
+                                <h3>공지사항</h3>
+                                <a href="">모두 보기</a>
+                            </div>
+                            <ul>
+                                <li>
+                                    <p>25.03.11 ~ 시스템 점검 예정</p>
+                                    <span>2022.12.12</span>
+                                </li>
+                                <li>
+                                    <p>25.03.11 ~ 시스템 점검 예정</p>
+                                    <span>2022.12.12</span>
+                                </li>
+                                <li>
+                                    <p>25.03.11 ~ 시스템 점검 예정</p>
+                                    <span>2022.12.12</span>
+                                </li>
+                                <li>
+                                    <p>25.03.11 ~ 시스템 점검 예정</p>
+                                    <span>2022.12.12</span>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+   .inner {
+     min-width: 100%;
+     font-family: 'NanumSquareNeo';
+
+     .cursor-pointer {
+       cursor: pointer;
+     }
+     .blind {
+       overflow: hidden;
+       position: absolute;
+       top: 0;
+       left: 0;
+       font-size: 0;
+     }
+
+     a {
+       cursor: pointer;
+       text-decoration: 0;
+     }
+
+     .date {
+       display: inline-block;
+       color: #A1AFBC;
+
+       span {
+         color: #A1AFBC;
+         font-size: 16px;
+         font-family: 'NanumSquareNeo';
+       }
+     }
+   }
