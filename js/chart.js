@@ -1,7 +1,6 @@
-// chart.js
-
-const ctx = document.getElementById("barChart").getContext("2d");
-const myChart = new Chart(ctx, {
+// bar chart
+const bar = document.getElementById("barChart").getContext("2d");
+const barChart = new Chart(bar, {
   type: "bar",
   data: {
     labels: [
@@ -43,7 +42,6 @@ const myChart = new Chart(ctx, {
           fontSize: 14,
           minRotation: 45,
           padding: 10,
-          stepSize: -10,
         },
       },
       y: {
@@ -54,6 +52,7 @@ const myChart = new Chart(ctx, {
         ticks: {
           color: "#828282",
           beginAtZero: true,
+          // y축 눈금 단위 설정
           stepSize: 15,
         },
         // y축 최대 값 설정
@@ -64,5 +63,49 @@ const myChart = new Chart(ctx, {
         },
       },
     },
+  },
+});
+
+// doughnut chart
+const doughnut = document.getElementById("doughnutChart").getContext("2d");
+const value = 42;
+const doughnutChart = new Chart(doughnut, {
+  type: "doughnut",
+  data: {
+    labels: ["완료", "접수"],
+    datasets: [
+      {
+        data: [58, 42],
+        label: false,
+        backgroundColor: ["#019EF7", "#EFF2F5"],
+        borderRadius: 10,
+      },
+    ],
+  },
+  options: {
+    plugins: {
+      annotation: {
+        annotations: {
+          dLabel: {
+            type: "doughnutLabel",
+            content: ({ chart }) => [
+              "Total",
+              chart.getDatasetMeta(0).total,
+              "last 7 months",
+            ],
+            font: { size: 20 },
+            color: ["black"],
+          },
+        },
+      },
+      legend: {
+        display: false,
+      },
+    },
+    title: {
+      // display: false,
+    },
+    // 도넛 두께 설정
+    cutout: "85%",
   },
 });

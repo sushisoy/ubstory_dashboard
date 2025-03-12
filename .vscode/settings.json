@@ -3,8 +3,9 @@
     {
       "format": "expanded",
       "extensionName": ".css",
-      "savePath": "~/../css"
+      "savePath": "/style/css"
     }
   ],
-  "liveSassCompile.settings.includeItems": []
+  "liveSassCompile.settings.includeItems": [],
+  "liveServer.settings.AdvanceCustomBrowserCmdLine": ""
 }

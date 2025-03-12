@@ -9,10 +9,9 @@
     <link rel="stylesheet" href="./style/css/fonts.css">
     <link rel="stylesheet" href="./style/css/main.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
     <script src="./js/main.js" defer></script>
     <script src="./js/chart.js" defer></script>
-    <!-- <script type="text/javascript" src="https://www.google.com/jsapi"></script> -->
     <title>Document</title>
 </head>
 <main>
@@ -396,8 +395,9 @@
                                     <span class="bg_blue">완료</span>
                                     <span><strong>320</strong> 건</span>
                                 </div>
-                                <div class="ring_chart">
-                                    <svg viewBox="0 0 120 120" class="chart-gauge" fill="none" stroke-width="2">
+                                <div class="doughnut_chart_area">
+                                    <canvas id="doughnutChart"></canvas>
+                                    <!-- <svg viewBox="0 0 120 120" class="chart-gauge" fill="none" stroke-width="2">
                                         <defs>
                                             <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
                                                 <stop offset="0%" stop-color="red" />
@@ -408,7 +408,7 @@
                                         <circle class="chart-gauge-secondary" transform="rotate(-90 60 60)" stroke-dasharray="320 360" stroke-dashoffset="320" r="57.32" cx="60" cy="60"></circle>
                                         <circle class="chart-gauge-primary" transform="rotate(-90 60 60)" stroke-dasharray="380 10" stroke-dashoffset="180" r="57.32" cx="60" cy="60"></circle>
                                         <text x="60" y="45" dx="0" dy="1em" class="chart-gauge-label">95.5<tspan class="chart-gauge-units">%</tspan></text>
-                                    </svg>
+                                    </svg> -->
                                 </div>
                             </section>
                         </div>
@@ -442,7 +442,6 @@
         </div>
     </div>
 </main>
-
 </body>
 
 </html>
