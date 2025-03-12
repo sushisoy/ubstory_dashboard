@@ -614,17 +614,18 @@
 
     .bottom {
       .bar_chart_area {
-        height: 273px;
+        position: relative;
+        height: 274px;
 
         p {
           margin-top: 2rem;
           font-size: 13px;
         }
 
-        #bar-chart {
-          width: 100%;
-          height: 100%;
-          position: relative;
+        #barChart {
+          position: absolute;
+          width: 100% !important;
+          height: 100% !important;
         }
       }
     }
