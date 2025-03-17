@@ -84,20 +84,6 @@ const doughnutChart = new Chart(doughnut, {
   },
   options: {
     plugins: {
-      annotation: {
-        annotations: {
-          dLabel: {
-            type: "doughnutLabel",
-            content: ({ chart }) => [
-              "Total",
-              chart.getDatasetMeta(0).total,
-              "last 7 months",
-            ],
-            font: { size: 20 },
-            color: ["black"],
-          },
-        },
-      },
       legend: {
         display: false,
       },

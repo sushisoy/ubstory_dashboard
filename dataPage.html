@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/css/reset.css">
+  <link rel="stylesheet" href="./style/css/common.css">
+  <link rel="stylesheet" href="./style/css/fonts.css">
+  <link rel="stylesheet" href="./style/css/dashboard.css">
+  <link rel="stylesheet" href="./style/css/dataPage.css">
+  <title>Document</title>
+</head>
+<main>
+  <div class="inner inner_data">
+    <h1 class="logo cursor-pointer">
+      <span class="blind">bizstory</span>
+    </h1>
+    <aside>
+      <div class="sidebar">
+        <a href="">비즈스토리 퀵 가이드</a>
+        <a href="">비즈스토리 건의사항</a>
+      </div>
+      <button type="button" class="btn_side cursor-pointer">
+        <img src="./assets/images/double-arrow.svg" alt="">
+      </button>
+      <button type="button" class="btn_menu cursor-pointer">
+        <img src="./assets/images/btn-hamburger.svg" alt="">
+      </button>
+    </aside>
+    <div class="main main-data">
+      <nav>
+        <div class="nav_inner">
+          <button type="button" class="profile cursor-pointer">
+            <img src="./assets/images/no-profile.svg" alt="">
+          </button>
+        </div>
+      </nav>
+      <section class="data-area">
+        <div class="top">
+          <h3 class="ft-24">접수 통계</h3>
+          <div class="breadcrumb">
+            <a class="link" href="">홈 > </a>
+            <a class="link" href="">통계관리 > </a>
+            <a class="link active" href="">접수통계</a>
+          </div>
+        </div>
+        <div class="date-pick-area">
+          <h4>통계 구분</h4>
+          <div class="dropdown_wrap">
+            <div class="dropdown">
+              <!-- [D] btn_selector 클릭 시 : aria-expanded="true" 로 변경 -->
+              <div class="btn_selector" aria-expanded="false">분류 선택</div>
+              <ul class="select_box_wrap">
+                <li class="title">태블릿</li>
+                <li class="title">컴퓨터 관련</li>
+                <ul class="mid_title">
+                  <li>삼성</li>
+                </ul>
+                <li class="title">네트워크</li>
+                <ul class="mid_title">
+                  <li>LG</li>
+                </ul>
+                <li class="title">복합기</li>
+                <ul class="mid_title">
+                  <li>iPad</li>
+                </ul>
+              </ul>
+            </div>
+            <!-- date picker -->
+            <div class="date_picker_controller">날짜 선택</div>
+          </div>
+        </div>
+        <div class="option_wrap">
+          <ul class="selectors">
+            <li>일별</li>
+            <li>주별</li>
+            <li>월별</li>
+            <li class="active">년도별</li>
+          </ul>
+          <button class="btn_print">인쇄하기</button>
+        </div>
+        <div class="contents_wrap">
+          <div class="sec_category">
+            <h4>카테고리</h3>
+              <!-- 토글 -->
+              <div class="toggle">
+                <input type="checkbox" id="switch">
+                <label for=""></label>
+                <span>전체</span>
+              </div>
+              <button type="button" class="btn_category"></button>
+              <ul>
+                <li>
+                  <input type="radio" id="check_form_radio">
+                  <label for="check_form_radio">도암 중학교</label>
+                </li>
+                <li>
+                  <input type="radio" id="check_form_radio">
+                  <label for="check_form_radio">도암 중학교</label>
+                </li>
+                <li>
+                  <input type="radio" id="check_form_radio">
+                  <label for="check_form_radio">도암 중학교</label>
+                </li>
+                <li>
+                  <input type="radio" id="check_form_radio">
+                  <label for="check_form_radio">도암 중학교</label>
+                </li>
+                <li>
+                  <input type="radio" id="check_form_radio">
+                  <label for="check_form_radio">도암 중학교</label>
+                </li>
+                <li>
+                  <input type="radio" id="check_form_radio">
+                  <label for="check_form_radio">도암 중학교</label>
+                </li>
+                <li>
+                  <input type="radio" id="check_form_radio">
+                  <label for="check_form_radio">도암 중학교</label>
+                </li>
+                <li>
+                  <input type="radio" id="check_form_radio">
+                  <label for="check_form_radio">도암 중학교</label>
+                </li>
+              </ul>
+          </div>
+          <div class="sec_chart">
+            <div class="year_controller">
+              <button type="button" class="btn_left"></button>
+              <p>2025년</p>
+              <button type="button" class="btn_right"></button>
+            </div>
+
+            <div class="chart_container">
+              <div class="chart_container_body">
+                <div class="chart_wrap">
+                  <canvas id="stacked_chart" width="1400" height="400"></canvas>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </div>
+    </section>
+  </div>
+  </div>
+</main>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="./js/dataPage.js" defer></script>
+
+
+</html>
