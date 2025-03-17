@@ -95,3 +95,84 @@ const doughnutChart = new Chart(doughnut, {
     cutout: "85%",
   },
 });
+
+window.chartColors = {
+  col_primary: "#F8A92F",
+  col_grey: "#EBEBEB",
+};
+
+var summary = document.getElementById("summary_chart").getContext("2d");
+
+var stackedChart = new Chart(summary, {
+  type: "bar",
+  data: {
+    labels: ["김길동", "홍길동", "이하니", "한송이", "고영희"],
+    datasets: [
+      {
+        type: "bar",
+        label: "배정 건",
+        backgroundColor: window.chartColors.col_primary,
+        stack: false,
+        data: [10, 34, 10, 5, 30, 15],
+        border: false,
+        borderRadius: 4,
+      },
+      {
+        type: "bar",
+        label: "처리 건",
+        backgroundColor: window.chartColors.col_grey,
+        stack: true,
+        data: [3, 13, 22, 5, 40, 15],
+        borderRadius: 4,
+        border: false,
+        borderRadius: 4,
+      },
+    ],
+  },
+  options: {
+    // 종횡비 유지 설정
+    maintainAspectRatio: false,
+    responsive: true,
+    maxBarThickness: 15,
+    tooltips: {
+      mode: "index",
+      intersect: true,
+    },
+    scales: {
+      x: {
+        grid: {
+          display: false,
+        },
+      },
+
+      y: {
+        // y축에 대한 가로 선에 대한 설정
+        ticks: {
+          color: "#828282",
+          beginAtZero: true,
+          // y축 눈금 단위 설정
+          stepSize: 10,
+        },
+        // y축 최대 값 설정
+        max: 50,
+        // y축의 간격을 조정하는 설정
+        afterDataLimits: (scale) => {
+          scale.max = scale.max * 1;
+        },
+      },
+    },
+    plugins: {
+      legend: {
+        display: false,
+      },
+      datalabels: {
+        display: true,
+        color: "red",
+        anchor: "end",
+        align: "-135",
+        offset: 1,
+      },
+    },
+    responsive: false,
+  },
+});

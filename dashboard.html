@@ -305,15 +305,32 @@
                                         </div>
                                     </div>
                                     <div class="toggle">
-                                        <span>요약</span>
+                                        <!-- [D] 토글 스위치 활성화 시 : 'division' 클래스에 'active' 추가 -->
+                                        <span class="division">요약</span>
                                         <input type="checkbox" id="switch" name="switch" class="cursor-pointer"><label for="switch"></label>
-                                        <!-- [D] 토글 스위치 시 "aictve" 클래스 추가 -->
-                                        <span class="active">상세</span>
+                                        <span class="division active">상세</span>
                                     </div>
                                 </div>
                                 <div class="bottom">
-                                    <!-- [D] 토글로 UI 변경될 때 "is-show" 클래스 추가 -->
-                                    <div class="data details is-show">
+                                    <!-- [D] 토글로 UI 변경 시 : "is-show" 클래스 추가 -->
+                                    <div class="data summary is-show">
+                                        <div class="option_dropdown_area">
+                                            <!-- [D] 활성화 시 : aria-expanded="true" -->
+                                            <div class="option_dropdown_wrap" aria-expanded="false">
+                                                <button type="button" class="option_dropdown_btn">제 2 관리팀</button>
+                                                <ul class="option_dropdown_list">
+                                                    <li class="option_dropdown_item">제 2 관리팀</li>
+                                                    <li class="option_dropdown_item">제 2 관리팀</li>
+                                                </ul>
+                                                <div class="division">
+                                                    <span>배정 건</span>
+                                                    <span>처리 건</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <canvas id="summary_chart"></canvas>
+                                    </div>
+                                    <div class="data details">
                                         <div class="option_dropdown_area">
                                             <!-- [D] 활성화 시 : aria-expanded="true" -->
                                             <div class="option_dropdown_wrap" aria-expanded="false">
@@ -358,22 +375,6 @@
                                         </ul>
                                     </div>
                                     <!-- 요약 현황 UI 작업 예정-->
-                                    <div class="data summary">
-                                        <div class="option_dropdown_area">
-                                            <!-- [D] 활성화 시 : aria-expanded="true" -->
-                                            <div class="option_dropdown_wrap" aria-expanded="false">
-                                                <button type="button" class="option_dropdown_btn">제 2 관리팀</button>
-                                                <ul class="option_dropdown_list">
-                                                    <li class="option_dropdown_item">제 2 관리팀</li>
-                                                    <li class="option_dropdown_item">제 2 관리팀</li>
-                                                </ul>
-                                                <div class="division">
-                                                    <span>배정 건</span>
-                                                    <span>처리 건</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </section>
                             <section class="completed_area">
