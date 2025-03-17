@@ -279,34 +279,34 @@
   .inner .welcome p span.color_grey {
     font-size: 12px;
   }
-  .inner .welcome .system_notice {
-    padding: 10px 18px;
-  }
-  .inner .welcome .system_notice .ico_notice {
-    width: 24px;
-    height: 18px;
-  }
-  .inner .welcome .system_notice p {
-    position: relative;
-    margin-left: 8px;
-    font-size: 12px;
-  }
-  .inner .welcome .system_notice p strong {
-    font-size: 12px;
-  }
-  .inner .welcome .system_notice p strong:first-of-type {
-    margin-left: 4px;
-  }
-  .inner .welcome .system_notice a {
-    position: absolute;
-    right: 36px;
-    margin-left: 0;
-    font-size: 12px;
-  }
   .inner .welcome .date_box span {
     font-size: 10px;
     font-weight: normal;
     letter-spacing: -0.16px;
+  }
+  .inner .system_notice {
+    padding: 10px 18px;
+  }
+  .inner .system_notice .ico_notice {
+    width: 24px;
+    height: 18px;
+  }
+  .inner .system_notice p {
+    position: relative;
+    margin-left: 8px;
+    font-size: 12px;
+  }
+  .inner .system_notice p strong {
+    font-size: 12px;
+  }
+  .inner .system_notice p strong:first-of-type {
+    margin-left: 4px;
+  }
+  .inner .system_notice a {
+    position: absolute;
+    right: 36px;
+    margin-left: 0;
+    font-size: 12px;
   }
 }
 .cursor-pointer {
