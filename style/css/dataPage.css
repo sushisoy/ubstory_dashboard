@@ -56,7 +56,7 @@
 .inner_data .date-pick-area .btn_selector {
   display: inline-block;
   position: relative;
-  width: 231px;
+  width: 255px;
   padding: 16px 12px;
   font-size: 20px;
   color: #abb8c3;
@@ -118,7 +118,7 @@
 }
 .inner_data .date_picker_controller {
   position: relative;
-  width: 231px;
+  width: 302px;
   margin-left: 24px;
   padding: 16px 12px;
   font-size: 20px;
@@ -197,7 +197,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  width: 30%;
+  width: 74px;
   height: 15px;
   margin: 26px 0 28px 28px;
 }
@@ -559,6 +559,9 @@
   .inner_data .data-area {
     padding: 0;
   }
+  .inner_data .data-area .top .title_data {
+    font-size: 18px;
+  }
   .inner_data .data-area .top .link {
     font-size: 14px;
   }
@@ -571,7 +574,7 @@
     font-size: 18px;
   }
   .inner_data .date-pick-area .btn_selector {
-    width: 112px;
+    width: 138px;
     padding: 10px 14px 10px 12px;
     font-size: 16px;
   }
@@ -580,10 +583,14 @@
     left: -2px;
   }
   .inner_data .date-pick-area .date_picker_controller {
-    width: 129px;
+    width: 157px;
     margin-left: 8px;
     padding: 10px 14px 10px 12px;
     font-size: 16px;
+  }
+  .inner_data .date-pick-area .date_picker_controller::after {
+    width: 18px;
+    height: 19px;
   }
   .inner_data .option_wrap {
     padding: 16px 0 24px 0;
@@ -593,7 +600,7 @@
     padding: 0;
   }
   .inner_data .selectors li {
-    padding: 8px 12px;
+    padding: 11px 12px;
     margin-left: 4px;
     font-size: 14px;
   }

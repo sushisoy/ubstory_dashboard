@@ -1,13 +1,11 @@
 .inner_login {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
   background-color: #1e1e1e;
 }
 .inner_login .sec_login {
   display: grid;
-  grid-template-rows: 690px 690px;
   grid-template-columns: 652px 652px;
+  grid-template-rows: 690px 690px;
+  margin-top: 178px;
 }
 .inner_login .panel_left {
   position: relative;
@@ -15,29 +13,108 @@
   background-color: #fff;
   border-radius: 20px 0 0 20px;
 }
+.inner_login .panel_left .header_text {
+  color: #737373;
+  font-size: 18px;
+}
+.inner_login .panel_left .logo_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .inner_login .panel_left .logo {
   position: relative;
   top: auto;
   left: auto;
+  margin-top: 8px;
 }
-.inner_login .panel_left .header_text_en {
-  margin-top: 18px;
-  font-size: 14px;
-}
-.inner_login .panel_left .header_text_ko {
-  margin-top: 7px;
-  font-size: 18px;
+.inner_login .panel_left .login_text {
+  display: inline-block;
+  font-size: 29px;
+  font-family: "NanumSquareNeoExtraBold";
 }
 .inner_login .panel_left .login_form_wrap {
-  display: flex;
-  flex-direction: column;
   margin-top: 40px;
 }
-.inner_login .panel_left .login_keep_wrap {
+.inner_login .panel_left .input_item {
+  position: relative;
+  height: 54px;
+}
+.inner_login .panel_left .input_item input {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 24px 24px 8px;
+  font-size: 16px;
+  border: 1px solid #d7d7d7;
+  border-radius: 12px;
+  outline: none;
+}
+.inner_login .panel_left .input_item input:focus-within {
+  border: 1px solid #f8a92f;
+}
+.inner_login .panel_left .input_item input:focus-within + label {
+  top: 12px;
+  left: 20px;
+  font-size: 10px;
+  transition: all 0.3s;
+}
+.inner_login .panel_left .input_item label {
+  position: absolute;
+  top: 16px;
+  left: 24px;
+  color: #bebebe;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+.inner_login .panel_left .input_item.password {
+  margin-top: 12px;
+}
+.inner_login .panel_left .login_keep_area_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 16px;
 }
+.inner_login .panel_left .login_keep_wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.inner_login .panel_left #keepLogin {
+  appearance: none;
+  width: 23px;
+  height: 23px;
+}
+.inner_login .panel_left #keepLogin::after {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: url("../../assets/images/checkbox.svg") no-repeat center/contain;
+  content: "";
+}
+.inner_login .panel_left #keepLogin:checked::after {
+  background: url("../../assets/images/checkbox-active.svg") no-repeat center;
+}
+.inner_login .panel_left .login_keep_label {
+  color: #3b3b3b;
+  font-size: 14px;
+}
+.inner_login .panel_left .msg_password {
+  justify-self: end;
+  color: #3b3b3b;
+  font-size: 14px;
+  text-decoration: underline;
+}
 .inner_login .panel_left .btn_login {
+  width: 100%;
   margin-top: 36px;
+  padding: 22px 0;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  background-color: #f4a03b;
+  font-size: 16px;
 }
 .inner_login .panel_right {
   display: grid;
@@ -66,7 +143,7 @@
   border-radius: 12px;
   text-align: center;
 }
-.inner_login .panel_right .title_carecone {
+.inner_login .panel_right .title_carecon {
   font-family: "NanumSquareNeoExtraBold";
   font-size: 16px;
 }
@@ -86,7 +163,7 @@
 .inner_login .panel_right .number_box span:first-of-type {
   margin-left: 0;
 }
-.inner_login .panel_right .btn_carecone {
+.inner_login .panel_right .btn_carecon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,6 +179,9 @@
   color: #ffffff;
   border: none;
 }
+.inner_login .panel_right .img_carecon {
+  width: 85px;
+}
 .inner_login .panel_right .go_service_container {
   display: grid;
   grid-template-columns: 294px;
@@ -114,7 +194,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 14px 0 20px 18px;
+  padding: 14px 14px 14px 18px;
   background-color: #ffffff;
   border-radius: 12px;
 }
@@ -131,41 +211,31 @@
   padding: 18px 18px 18px 28px;
   font-size: 0;
 }
-.inner_login .panel_right .app_download .title_download {
-  display: block;
-  margin-bottom: 13px;
-  font-size: 16px;
-  font-family: "NanumSquareNeoBold";
-}
 .inner_login .panel_right .app_download .qr_wrap {
   display: inline-flex;
   justify-content: space-between;
-  width: 231px;
+  align-items: center;
+  width: 257px;
   margin-left: 17px;
-  padding: 12px 12px 12px 14px;
+  padding: 21px 18px;
   background-color: #f2f4f7;
   border-radius: 12px;
 }
 .inner_login .panel_right .app_download .qr_wrap:first-of-type {
   margin-left: 0;
 }
-.inner_login .panel_right .app_download .text_wrap span {
-  color: #848484;
-  font-size: 14px;
-  font-family: "NanumSquareNeoBold";
+.inner_login .panel_right .app_download .img_appstore {
+  width: 149px;
+  height: 35px;
+  margin-right: 16px;
 }
-.inner_login .panel_right .app_download .text_wrap span strong {
-  display: inline-block;
-  font-size: 14px;
-  font-family: "NanumSquareNeoExtraBold";
-}
-.inner_login .panel_right .app_download .text_wrap strong {
-  display: block;
-  margin-top: 6px;
-  font-size: 14px;
+.inner_login .panel_right .app_download .img_appstore_ios {
+  width: 137px;
+  height: 37px;
+  margin-right: 28px;
 }
 .inner_login .panel_right .app_download .img_qr {
-  width: 74px;
+  width: 56px;
 }
 .inner_login .panel_right .notice_area {
   padding: 18px 24px 23px 32px;
