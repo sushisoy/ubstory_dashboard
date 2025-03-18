@@ -29,6 +29,11 @@
       content: "";
     }
 
+    &.black::after {
+      background: url("../../assets/images/logo_black.svg") no-repeat center /
+        contain;
+    }
+
     &::after {
       display: inline-block;
       position: absolute;
@@ -393,6 +398,18 @@ a {
     font-size: 16px;
     font-family: "NanumSquareNeo";
   }
+}
+
+.flex {
+  display: flex;
+}
+
+.col_primary {
+  color: #f8a92f;
+}
+
+.col_blue {
+  color: #1897f4;
 }
 
 .ft-24 {

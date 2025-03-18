@@ -1,0 +1,213 @@
+.inner_login {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #1e1e1e;
+}
+.inner_login .sec_login {
+  display: grid;
+  grid-template-rows: 690px 690px;
+  grid-template-columns: 652px 652px;
+}
+.inner_login .panel_left {
+  position: relative;
+  padding: 143px 104px;
+  background-color: #fff;
+  border-radius: 20px 0 0 20px;
+}
+.inner_login .panel_left .logo {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+.inner_login .panel_left .header_text_en {
+  margin-top: 18px;
+  font-size: 14px;
+}
+.inner_login .panel_left .header_text_ko {
+  margin-top: 7px;
+  font-size: 18px;
+}
+.inner_login .panel_left .login_form_wrap {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.inner_login .panel_left .login_keep_wrap {
+  margin-top: 16px;
+}
+.inner_login .panel_left .btn_login {
+  margin-top: 36px;
+}
+.inner_login .panel_right {
+  display: grid;
+  grid-template-rows: 176px 165px 212px;
+  grid-template-columns: 1fr;
+  row-gap: 13px;
+  padding: 56px 36px 56px 39px;
+  background-color: #f2f3f8;
+  border-radius: 0 20px 20px 0;
+}
+.inner_login .panel_right > div {
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+.inner_login .panel_right .grid_inner {
+  display: flex;
+  column-gap: 12px;
+  background-color: #f2f3f8;
+}
+.inner_login .panel_right .carecon_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 18px 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  text-align: center;
+}
+.inner_login .panel_right .title_carecone {
+  font-family: "NanumSquareNeoExtraBold";
+  font-size: 16px;
+}
+.inner_login .panel_right .number_box {
+  margin-top: 25px;
+  font-size: 0;
+}
+.inner_login .panel_right .number_box span {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 7px 10px;
+  border-radius: 4px;
+  background-color: #f2f4f7;
+  font-family: "NanumSquareNeoExtraBold";
+  font-size: 20px;
+}
+.inner_login .panel_right .number_box span:first-of-type {
+  margin-left: 0;
+}
+.inner_login .panel_right .btn_carecone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  width: 212px;
+  margin: 0 auto;
+  margin-top: 25px;
+  padding: 10px 0;
+  background-color: #1897f4;
+  border-radius: 12px;
+  font-family: "NanumSquareNeoBold";
+  font-size: 14px;
+  color: #ffffff;
+  border: none;
+}
+.inner_login .panel_right .go_service_container {
+  display: grid;
+  grid-template-columns: 294px;
+  grid-template-rows: 83px 83px;
+  row-gap: 10px;
+  background-color: #f2f4f7;
+  border-radius: 12px;
+}
+.inner_login .panel_right .go_service_container .go_service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 14px 0 20px 18px;
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+.inner_login .panel_right .go_service_container p {
+  font-size: 14px;
+  color: #1e1e1e;
+}
+.inner_login .panel_right .go_service_container a {
+  display: inline-block;
+  font-family: "NanumSquareNeoExtraBold";
+  font-size: 18px;
+}
+.inner_login .panel_right .app_download {
+  padding: 18px 18px 18px 28px;
+  font-size: 0;
+}
+.inner_login .panel_right .app_download .title_download {
+  display: block;
+  margin-bottom: 13px;
+  font-size: 16px;
+  font-family: "NanumSquareNeoBold";
+}
+.inner_login .panel_right .app_download .qr_wrap {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 231px;
+  margin-left: 17px;
+  padding: 12px 12px 12px 14px;
+  background-color: #f2f4f7;
+  border-radius: 12px;
+}
+.inner_login .panel_right .app_download .qr_wrap:first-of-type {
+  margin-left: 0;
+}
+.inner_login .panel_right .app_download .text_wrap span {
+  color: #848484;
+  font-size: 14px;
+  font-family: "NanumSquareNeoBold";
+}
+.inner_login .panel_right .app_download .text_wrap span strong {
+  display: inline-block;
+  font-size: 14px;
+  font-family: "NanumSquareNeoExtraBold";
+}
+.inner_login .panel_right .app_download .text_wrap strong {
+  display: block;
+  margin-top: 6px;
+  font-size: 14px;
+}
+.inner_login .panel_right .app_download .img_qr {
+  width: 74px;
+}
+.inner_login .panel_right .notice_area {
+  padding: 18px 24px 23px 32px;
+}
+.inner_login .panel_right .notice_area .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inner_login .panel_right .notice_area .title_notice {
+  font-size: 16px;
+  font-family: "NanumSquareNeoExtraBold";
+  line-height: normal;
+}
+.inner_login .panel_right .notice_area a {
+  color: #a1afbc;
+  font-size: 14px;
+  font-family: "NanumSquareNeoBold";
+}
+.inner_login .panel_right .notice_area ul {
+  margin-top: 17px;
+  margin-bottom: 0;
+  padding-left: 0;
+  border-top: 1px solid #8d9cbe;
+}
+.inner_login .panel_right .notice_area ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 33px;
+  padding: 0 12px;
+  border-bottom: 1px solid #d1d7e5;
+  font-size: 14px;
+  font-family: "NanumSquareNeoBold";
+}
+.inner_login .panel_right .notice_area ul li p {
+  font-size: 14px;
+  font-family: "NanumSquareNeo";
+  color: #3e3e3e;
+}
+.inner_login .panel_right .notice_area ul li span {
+  font-size: 12px;
+  color: #a1afbc;
+  font-family: "NanumSquareNeo";
+}/*# sourceMappingURL=loginPage.css.map */

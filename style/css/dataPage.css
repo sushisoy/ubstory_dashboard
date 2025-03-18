@@ -17,6 +17,9 @@
   justify-content: space-between;
   align-items: center;
 }
+.inner_data .top .title_data {
+  font-size: 24px;
+}
 .inner_data .top .breadcrumb {
   display: inline-block;
 }
