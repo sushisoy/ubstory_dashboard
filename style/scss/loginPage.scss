@@ -3,8 +3,10 @@
 
   .sec_login {
     display: grid;
+    // grid-template-columns: 40.75rem;
     grid-template-columns: 652px 652px;
-    grid-template-rows: 690px 690px;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 auto;
     margin-top: 178px;
   }
 
@@ -23,13 +25,14 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      width: 295px;
+      margin-top: 8px;
     }
 
     .logo {
       position: relative;
       top: auto;
       left: auto;
-      margin-top: 8px;
     }
 
     .login_text {
@@ -312,6 +315,318 @@
             font-size: 12px;
             color: #a1afbc;
             font-family: "NanumSquareNeo";
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1499px) {
+  .inner_login {
+    .sec_login {
+      grid-template-columns: 630px;
+      grid-template-rows: 531px 652px;
+      margin-top: 58px;
+    }
+
+    .panel_left {
+      padding: 87px 104px 0 86px;
+      border-radius: 20px 20px 0 0;
+
+      .logo_wrap {
+        display: flex;
+        width: 297px;
+        justify-content: space-between;
+        margin-top: 8px;
+      }
+
+      .logo {
+        width: 70%;
+        height: 100%;
+        margin-top: auto;
+        &::before {
+          width: 42px;
+          height: 45px;
+        }
+        &::after {
+          width: 145px;
+          height: 23px;
+          margin-left: 10px;
+        }
+      }
+
+      .login_text {
+        display: inline-block;
+        font-size: 29px;
+        font-family: "NanumSquareNeoExtraBold";
+      }
+
+      .login_form_wrap {
+        margin-top: 37px;
+      }
+    }
+
+    .panel_right {
+      display: grid;
+      grid-template-rows: 176px 137px 212px;
+      grid-template-columns: 577px;
+      align-items: center;
+      justify-content: center;
+      padding: 34px 0;
+      border-radius: 0 0 20px 20px;
+
+      .img_carecon {
+        width: 82px;
+      }
+
+      .go_service_container {
+        a {
+          font-family: "NanumSquareNeoBold";
+        }
+      }
+
+      .app_download {
+        .qr_wrap {
+          display: inline-flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 257px;
+          margin-left: 17px;
+          padding: 21px 18px;
+          background-color: #f2f4f7;
+          border-radius: 12px;
+          &:first-of-type {
+            margin-left: 0;
+          }
+        }
+        .img_appstore {
+          width: 149px;
+          height: 35px;
+          margin-right: 16px;
+          &_ios {
+            width: 137px;
+            height: 37px;
+            margin-right: 28px;
+          }
+        }
+        .img_qr {
+          display: none;
+        }
+      }
+
+      .notice_area {
+        padding: 18px 24px 23px 32px;
+
+        .top {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .title_notice {
+          font-size: 16px;
+          font-family: "NanumSquareNeoExtraBold";
+          line-height: normal;
+        }
+
+        a {
+          color: #a1afbc;
+          font-size: 14px;
+          font-family: "NanumSquareNeoBold";
+        }
+
+        ul {
+          margin-top: 17px;
+          margin-bottom: 0;
+          padding-left: 0;
+          border-top: 1px solid #8d9cbe;
+
+          li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 33px;
+            padding: 0 12px;
+            border-bottom: 1px solid #d1d7e5;
+            font-size: 14px;
+            font-family: "NanumSquareNeoBold";
+
+            p {
+              font-size: 14px;
+              font-family: "NanumSquareNeo";
+              color: #3e3e3e;
+            }
+
+            span {
+              font-size: 12px;
+              color: #a1afbc;
+              font-family: "NanumSquareNeo";
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .inner_login {
+    .sec_login {
+      grid-template-columns: 100vw;
+      grid-template-rows: 397px 883px;
+      margin-top: 0;
+    }
+
+    .panel_left {
+      padding: 38px 18px 18px;
+      border-radius: 0;
+
+      .logo_wrap {
+        width: 282px;
+        height: 45px;
+        margin-top: 14px;
+      }
+
+      .logo {
+        &::after {
+          width: 148px;
+          height: 30px;
+          margin-left: 10px;
+        }
+      }
+
+      .login_text {
+        font-size: 24px;
+      }
+
+      .login_form_wrap {
+        margin-top: 20px;
+      }
+
+      .input_item {
+        width: 334px;
+        height: 52px;
+        label {
+          top: 19px;
+          font-size: 14px;
+        }
+      }
+
+      .login_form_wrap {
+        gap: 11px;
+      }
+
+      .btn_login {
+        margin-top: 20px;
+        padding: 17px 0;
+      }
+    }
+
+    .panel_right {
+      display: block;
+      padding: 0;
+      border-radius: 0 0 20px 20px;
+      margin-top: 0;
+
+      .grid_inner {
+        flex-direction: column;
+        column-gap: 0;
+        padding: 25px 18px 12px 18px;
+      }
+
+      .carecon_container {
+        padding: 18px 0;
+      }
+
+      .btn_carecon {
+        gap: 8px;
+        padding: 8px 0;
+      }
+
+      .img_carecon {
+        padding-top: 2px;
+      }
+
+      .go_service_container {
+        grid-template-columns: 100%;
+        row-gap: 12px;
+        margin-top: 12px;
+
+        .go_service {
+          justify-content: center;
+          gap: 12px;
+        }
+
+        a {
+          font-family: "NanumSquareNeo";
+        }
+      }
+
+      .app_download {
+        .flex {
+          flex-direction: column;
+          gap: 13px;
+        }
+        .qr_wrap {
+          display: inline-flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          margin-left: auto;
+          padding: 18px;
+        }
+      }
+
+      .notice_area {
+        margin-top: 12px;
+        padding: 18px 24px 23px 32px;
+
+        .top {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .title_notice {
+          font-size: 16px;
+          font-family: "NanumSquareNeoExtraBold";
+          line-height: normal;
+        }
+
+        a {
+          color: #a1afbc;
+          font-size: 14px;
+          font-family: "NanumSquareNeoBold";
+        }
+
+        ul {
+          margin-top: 17px;
+          margin-bottom: 0;
+          padding-left: 0;
+          border-top: 1px solid #8d9cbe;
+
+          li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 33px;
+            padding: 0 12px;
+            border-bottom: 1px solid #d1d7e5;
+            font-size: 14px;
+            font-family: "NanumSquareNeoBold";
+
+            p {
+              font-size: 14px;
+              font-family: "NanumSquareNeo";
+              color: #3e3e3e;
+            }
+
+            span {
+              font-size: 12px;
+              color: #a1afbc;
+              font-family: "NanumSquareNeo";
+            }
           }
         }
       }
