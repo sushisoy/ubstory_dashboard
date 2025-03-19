@@ -211,7 +211,15 @@
 }
 .inner_login .panel_right .app_download {
   padding: 18px 18px 18px 28px;
-  font-size: 0;
+}
+.inner_login .panel_right .app_download .download_inner {
+  display: flex;
+  flex-direction: column;
+}
+.inner_login .panel_right .app_download .title_download {
+  margin-bottom: 13px;
+  font-size: 16px;
+  font-family: "NanumSquareNeoExtraBold";
 }
 .inner_login .panel_right .app_download .qr_wrap {
   display: inline-flex;
@@ -435,7 +443,6 @@
     margin-top: 20px;
   }
   .inner_login .panel_left .input_item {
-    width: 334px;
     height: 52px;
   }
   .inner_login .panel_left .input_item label {
@@ -482,9 +489,23 @@
   .inner_login .panel_right .go_service_container a {
     font-family: "NanumSquareNeo";
   }
+  .inner_login .panel_right .app_download {
+    background-color: #f2f3f8;
+  }
+  .inner_login .panel_right .app_download .title_download {
+    margin-bottom: 0;
+    font-size: 16px;
+  }
   .inner_login .panel_right .app_download .flex {
     flex-direction: column;
     gap: 13px;
+  }
+  .inner_login .panel_right .app_download .download_inner {
+    flex-direction: column;
+    gap: 13px;
+    padding: 18px;
+    background-color: #ffffff;
+    border-radius: 12px;
   }
   .inner_login .panel_right .app_download .qr_wrap {
     display: inline-flex;
@@ -492,11 +513,16 @@
     align-items: center;
     width: 100%;
     margin-left: auto;
-    padding: 18px;
   }
   .inner_login .panel_right .notice_area {
     margin-top: 12px;
-    padding: 18px 24px 23px 32px;
+    padding: 0 18px 36px 18px;
+    background-color: #f2f3f8;
+  }
+  .inner_login .panel_right .notice_area .notice_inner {
+    padding: 18px 18px 23px 18px;
+    background-color: #ffffff;
+    border-radius: 12px;
   }
   .inner_login .panel_right .notice_area .top {
     display: flex;
@@ -517,7 +543,6 @@
     margin-top: 17px;
     margin-bottom: 0;
     padding-left: 0;
-    border-top: 1px solid #8d9cbe;
   }
   .inner_login .panel_right .notice_area ul li {
     display: flex;

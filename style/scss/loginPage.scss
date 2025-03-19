@@ -239,7 +239,18 @@
 
     .app_download {
       padding: 18px 18px 18px 28px;
-      font-size: 0;
+
+      .download_inner {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .title_download {
+        margin-bottom: 13px;
+        font-size: 16px;
+        font-family: "NanumSquareNeoExtraBold";
+      }
+
       .qr_wrap {
         display: inline-flex;
         justify-content: space-between;
@@ -505,7 +516,6 @@
       }
 
       .input_item {
-        width: 334px;
         height: 52px;
         label {
           top: 19px;
@@ -564,9 +574,24 @@
       }
 
       .app_download {
+        background-color: #f2f3f8;
+
+        .title_download {
+          margin-bottom: 0;
+          font-size: 16px;
+        }
+
         .flex {
           flex-direction: column;
           gap: 13px;
+        }
+
+        .download_inner {
+          flex-direction: column;
+          gap: 13px;
+          padding: 18px;
+          background-color: #ffffff;
+          border-radius: 12px;
         }
         .qr_wrap {
           display: inline-flex;
@@ -574,13 +599,19 @@
           align-items: center;
           width: 100%;
           margin-left: auto;
-          padding: 18px;
         }
       }
 
       .notice_area {
         margin-top: 12px;
-        padding: 18px 24px 23px 32px;
+        padding: 0 18px 36px 18px;
+        background-color: #f2f3f8;
+
+        .notice_inner {
+          padding: 18px 18px 23px 18px;
+          background-color: #ffffff;
+          border-radius: 12px;
+        }
 
         .top {
           display: flex;
@@ -604,7 +635,7 @@
           margin-top: 17px;
           margin-bottom: 0;
           padding-left: 0;
-          border-top: 1px solid #8d9cbe;
+          // border-top: 1px solid #8d9cbe;
 
           li {
             display: flex;
