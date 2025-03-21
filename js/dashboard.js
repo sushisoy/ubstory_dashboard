@@ -1,4 +1,6 @@
-// bar chart
+// const { default: plugin } = require("chartjs-plugin-datalabels");
+
+// 당월 전체 AS 접수 비중 바 차트
 const bar = document.getElementById("barChart").getContext("2d");
 const barChart = new Chart(bar, {
   type: "bar",
@@ -66,9 +68,28 @@ const barChart = new Chart(bar, {
   },
 });
 
-// doughnut chart
+// 전체 AS 완료 현황 도넛 차트
 const doughnut = document.getElementById("doughnutChart").getContext("2d");
 const value = 42;
+
+// centerText plugin block
+// const centerText = {
+//   id: "centerText",
+//   afterDataetDraw(chart, args, pluginOptions) {
+//     const { ctx, data } = chart;
+
+//     const text = data.labels[data.labels.length - 1];
+
+//     ctx.save();
+//     const x = chart.getDatasetMeta(0).data[0].x;
+//     const y = chart.getDatasetMeta(0).data[0].y;
+//     ctx.textAlign;
+//     ctx.font = "bold 12px";
+
+//     ctx.fillText(text, x, y);
+//   },
+// };
+
 const doughnutChart = new Chart(doughnut, {
   type: "doughnut",
   data: {
@@ -94,7 +115,14 @@ const doughnutChart = new Chart(doughnut, {
     // 도넛 두께 설정
     cutout: "85%",
   },
+  // plugin: [centerText],
 });
+
+// function updatePercent() {
+//   doughnutChart.data.datasets[0].data.push(5);
+//   doughnutChart.updatePercent();
+//   console.log("test");
+// }
 
 window.chartColors = {
   col_primary: "#F8A92F",

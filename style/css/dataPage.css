@@ -7,7 +7,7 @@
   width: 100%;
   background-color: rgb(245, 247, 249);
 }
-.inner_data .data-area {
+.inner_data .data_area {
   margin-left: 30px;
   padding: 28px 24px;
   background-color: #fff;
@@ -23,15 +23,15 @@
 .inner_data .top .breadcrumb {
   display: inline-block;
 }
-.inner_data .top .link {
+.inner_data .top .breadcrumb_link {
   font-size: 18px;
   color: #7f8d99;
   letter-spacing: -0.16px;
 }
-.inner_data .top .link.active {
+.inner_data .top .breadcrumb_link.active {
   font-family: "NanumSquareNeoBold";
 }
-.inner_data .date-pick-area {
+.inner_data .date_picker_area {
   display: flex;
   align-items: center;
   margin-top: 24px;
@@ -39,21 +39,21 @@
   border-radius: 12px;
   background-color: #f2f4f7;
 }
-.inner_data .date-pick-area h4 {
+.inner_data .date_picker_area .title_data_picker {
   display: inline-block;
   font-size: 24px;
 }
-.inner_data .date-pick-area .dropdown_wrap {
+.inner_data .date_picker_area .dropdown_wrap {
   display: flex;
   margin-left: 34px;
 }
-.inner_data .date-pick-area .dropdown {
+.inner_data .date_picker_area .dropdown {
   position: relative;
   border: 1px solid #bdbdbd;
   border-radius: 8px;
   background-color: #fff;
 }
-.inner_data .date-pick-area .btn_selector {
+.inner_data .date_picker_area .btn_selector {
   display: inline-block;
   position: relative;
   width: 255px;
@@ -66,7 +66,7 @@
   background-color: transparent;
   cursor: pointer;
 }
-.inner_data .date-pick-area .btn_selector:after {
+.inner_data .date_picker_area .btn_selector:after {
   position: absolute;
   display: inline-block;
   right: 12px;
@@ -78,20 +78,22 @@
   transition: transform 0.3s ease;
   content: "";
 }
-.inner_data .date-pick-area .btn_selector[aria-expanded=true]::after {
+.inner_data .date_picker_area .btn_selector[aria-expanded=true]::after {
   top: 20px;
   transform: rotate(180deg);
   transition: transform 0.3s ease;
 }
-.inner_data .date-pick-area .btn_selector[aria-expanded=true] + .select_box_wrap {
+.inner_data .date_picker_area .btn_selector[aria-expanded=true] + .select_box_wrap {
   display: block;
 }
 .inner_data .select_box_wrap {
+  overflow-y: scroll;
   display: none;
   position: absolute;
-  top: 52px;
+  top: 53px;
   left: 0;
   width: 100%;
+  max-height: 267px;
   padding: 20px 0 12px 0;
   border-radius: 8px;
   border: 1px solid #d5d5d5;
@@ -115,6 +117,16 @@
 .inner_data .select_box_wrap .mid_title {
   padding-top: 12px;
   margin-left: 10px;
+}
+.inner_data .select_box_wrap::-webkit-scrollbar {
+  width: 4px;
+}
+.inner_data .select_box_wrap::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+.inner_data .select_box_wrap::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: #a8b6c4;
 }
 .inner_data .date_picker_controller {
   position: relative;
@@ -185,6 +197,7 @@
   column-gap: 24px;
 }
 .inner_data .sec_category {
+  height: 844px;
   padding: 28px 0;
   border: 1px solid #d5d5d5;
   border-radius: 12px;
@@ -292,7 +305,6 @@
 }
 .inner_data .sec_chart {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   padding: 33px 34px 42px 40px;
   border: 1px solid #d5d5d5;
@@ -336,7 +348,6 @@
 }
 .inner_data #stacked_chart {
   max-width: 100%;
-  min-height: 100%;
 }
 
 @media (max-width: 1499px) {
@@ -645,6 +656,7 @@
   }
   .inner_data .sec_chart {
     margin-top: 24px;
+    padding: 10px;
   }
   .inner_data .chart_container_body {
     position: relative;

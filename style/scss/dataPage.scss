@@ -6,13 +6,11 @@
     width: 100%;
     background-color: rgb(245, 247, 249);
   }
-
-  .data-area {
+  .data_area {
     margin-left: 30px;
     padding: 28px 24px;
     background-color: #fff;
   }
-
   .top {
     display: flex;
     justify-content: space-between;
@@ -23,7 +21,7 @@
     .breadcrumb {
       display: inline-block;
     }
-    .link {
+    .breadcrumb_link {
       font-size: 18px;
       color: #7f8d99;
       letter-spacing: -0.16px;
@@ -32,19 +30,17 @@
       }
     }
   }
-
-  .date-pick-area {
+  .date_picker_area {
     display: flex;
     align-items: center;
     margin-top: 24px;
     padding: 24px 42px;
     border-radius: 12px;
     background-color: #f2f4f7;
-    h4 {
+    .title_data_picker {
       display: inline-block;
       font-size: 24px;
     }
-
     .dropdown_wrap {
       display: flex;
       margin-left: 34px;
@@ -55,7 +51,6 @@
       border-radius: 8px;
       background-color: #fff;
     }
-
     .btn_selector {
       display: inline-block;
       position: relative;
@@ -68,7 +63,6 @@
       text-align: left;
       background-color: transparent;
       cursor: pointer;
-
       &:after {
         position: absolute;
         display: inline-block;
@@ -82,7 +76,6 @@
         transition: transform 0.3s ease;
         content: "";
       }
-
       &[aria-expanded="true"]::after {
         top: 20px;
         transform: rotate(180deg);
@@ -94,17 +87,18 @@
     }
   }
   .select_box_wrap {
+    overflow-y: scroll;
     display: none;
     position: absolute;
-    top: 52px;
+    top: 53px;
     left: 0;
     width: 100%;
+    max-height: 267px;
     padding: 20px 0 12px 0;
     border-radius: 8px;
     border: 1px solid #d5d5d5;
     background-color: #fff;
     z-index: 1;
-
     .title,
     .mid_title {
       padding: 12px 10px 8px 10px;
@@ -115,19 +109,26 @@
         color: #f8a92f;
       }
     }
-
     .title {
       &:first-of-type {
         padding-top: 0px;
       }
     }
-
     .mid_title {
       padding-top: 12px;
       margin-left: 10px;
     }
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: #fff;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 2px;
+      background-color: #a8b6c4;
+    }
   }
-
   .date_picker_controller {
     position: relative;
     width: 302px;
@@ -154,13 +155,11 @@
       content: "";
     }
   }
-
   .option_wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
   .selectors {
     display: flex;
     padding: 24px 0;
@@ -182,7 +181,6 @@
       }
     }
   }
-
   .btn_print {
     width: 150px;
     height: 52px;
@@ -194,15 +192,14 @@
     border-color: transparent;
     font-family: "NanumSquareNeoExtraBold";
   }
-
   .contents_wrap {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 18% 81%;
     column-gap: 24px;
   }
-
   .sec_category {
+    height: 844px;
     padding: 28px 0;
     border: 1px solid #d5d5d5;
     border-radius: 12px;
@@ -227,7 +224,6 @@
         z-index: 1;
         cursor: pointer;
       }
-
       label {
         position: absolute;
         top: 0;
@@ -237,7 +233,6 @@
         border-radius: 113px;
         transition: background 0.4s;
       }
-
       label::after {
         position: absolute;
         right: 16px;
@@ -250,7 +245,6 @@
         transition: all 0.4s;
         content: "";
       }
-
       label::before {
         font-size: 24px;
         position: absolute;
@@ -259,7 +253,6 @@
         transition: all 0.4s;
         content: "";
       }
-
       #switch:checked + label {
         background-color: #f8a92f;
       }
@@ -313,10 +306,8 @@
       }
     }
   }
-
   .sec_chart {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
     padding: 33px 34px 42px 40px;
     border: 1px solid #d5d5d5;
@@ -362,14 +353,8 @@
       }
     }
   }
-
-  // .chart_wrap {
-  //   min-height: 680px;
-  // }
-
   #stacked_chart {
     max-width: 100%;
-    min-height: 100%;
   }
 }
 
@@ -447,21 +432,13 @@
     .sec_chart {
       margin-top: 24px;
     }
-    //
-    .chart_container {
-      // width: 1000px;
-      // max-width: 1000px;
-      // overflow-x: scroll;
-    }
     .chart_container_body {
       position: relative;
     }
-    // 차트를 직접 감싸는 상위 태그
     .chart_wrap {
       width: 100%;
       overflow-x: scroll;
     }
-
     #stacked_chart2 {
       position: absolute;
       top: 0;
@@ -470,28 +447,24 @@
       width: 100%;
     }
   }
-
-  // stacked chart style
+  // 스택 차트 스타일
   .main-wrapper {
     align-items: center;
     display: flex;
     height: 100vh;
     justify-content: center;
   }
-
   .wrapper {
     box-shadow: 0 0 40px rgba(51, 59, 102, 0.5);
     display: none;
     width: 870px;
   }
-
   .cards {
     background: #fff;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     padding: 30px 40px;
   }
-
   .listen-wrap {
     overflow: hidden;
   }
@@ -521,7 +494,6 @@
     line-height: 18px;
     vertical-align: middle;
   }
-
   .count {
     color: #4a4a4a;
     font-size: 48px;
@@ -530,7 +502,6 @@
     line-height: 46px !important;
     margin-right: 10px;
   }
-
   .chart-wrapper {
     background: #333b66;
     border-bottom-left-radius: 4px;
@@ -538,12 +509,10 @@
     clear: both;
     padding: 20px 0 10px;
   }
-
   text {
     font-size: 12px;
     fill: #a7b2eb;
   }
-
   .axis path,
   .axis line,
   .gridline line {
@@ -558,12 +527,10 @@
     stroke-width: 3px;
     fill: none;
   }
-
   path.domain {
     fill: none;
     opacity: 0.1;
   }
-
   div.tooltip {
     color: #4a4a4a;
     position: absolute;
@@ -574,11 +541,9 @@
     border-radius: 4px;
     pointer-events: none;
   }
-
   .tick text {
     font-size: 10px;
   }
-
   .vbroadcast-legend {
     float: right;
     margin-right: 40px;
@@ -657,11 +622,9 @@
         }
       }
     }
-
     .option_wrap {
       padding: 16px 0 24px 0;
     }
-
     .selectors {
       flex-wrap: wrap;
       padding: 0;
@@ -671,14 +634,12 @@
         font-size: 14px;
       }
     }
-
     .btn_print {
       width: 98px;
       height: 36px;
       padding: 0 19px;
       font-size: 14px;
     }
-
     .contents_wrap {
       grid-template-columns: 1fr;
     }
@@ -714,22 +675,15 @@
     }
     .sec_chart {
       margin-top: 24px;
-    }
-    //
-    .chart_container {
-      // width: 1000px;
-      // max-width: 1000px;
-      // overflow-x: scroll;
+      padding: 10px;
     }
     .chart_container_body {
       position: relative;
     }
-    // 차트를 직접 감싸는 상위 태그
     .chart_wrap {
       width: 100%;
       overflow-x: scroll;
     }
-
     #stacked_chart2 {
       position: absolute;
       top: 0;

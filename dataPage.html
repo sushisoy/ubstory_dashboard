@@ -18,39 +18,38 @@
     </h1>
     <aside>
       <div class="sidebar">
-        <a href="">비즈스토리 퀵 가이드</a>
-        <a href="">비즈스토리 건의사항</a>
+        <a href="" class="link_sidebar">비즈스토리 퀵 가이드</a>
+        <a href="" class="link_sidebar">비즈스토리 건의사항</a>
       </div>
-      <button type="button" class="btn_side cursor-pointer">
+      <button type="button" class="btn_sidebar">
         <img src="./assets/images/double-arrow.svg" alt="">
       </button>
-      <button type="button" class="btn_menu cursor-pointer">
+      <button type="button" class="btn_menu">
         <img src="./assets/images/btn-hamburger.svg" alt="">
       </button>
     </aside>
-    <div class="main main-data">
+    <div class="main main_data">
       <nav>
         <div class="nav_inner">
-          <button type="button" class="profile cursor-pointer">
-            <img src="./assets/images/no-profile.svg" alt="">
-          </button>
+          <img src="./assets/images/no-profile.svg" class="img_profile" alt="">
         </div>
       </nav>
-      <section class="data-area">
+      <section class="data_area">
         <div class="top">
           <h3 class="title_data">접수 통계</h3>
+          <!-- [D] 현재 페이지 활성화 시 : 'active' 클래스 추가 -->
           <div class="breadcrumb">
-            <a class="link" href="">홈 > </a>
-            <a class="link" href="">통계관리 > </a>
-            <a class="link active" href="">접수통계</a>
+            <a class="breadcrumb_link" href="">홈 > </a>
+            <a class="breadcrumb_link" href="">통계관리 > </a>
+            <a class="breadcrumb_link active" href="">접수통계</a>
           </div>
         </div>
-        <div class="date-pick-area">
-          <h4>통계 구분</h4>
+        <div class="date_picker_area">
+          <h4 class="title_date_picker">통계 구분</h4>
           <div class="dropdown_wrap">
             <div class="dropdown">
               <!-- [D] btn_selector 클릭 시 : aria-expanded="true" 로 변경 -->
-              <div class="btn_selector" aria-expanded="false">분류 선택</div>
+              <div class="btn_selector" aria-expanded="true">분류 선택</div>
               <ul class="select_box_wrap">
                 <li class="title">태블릿</li>
                 <li class="title">컴퓨터 관련</li>
@@ -67,7 +66,6 @@
                 </ul>
               </ul>
             </div>
-            <!-- date picker -->
             <div class="date_picker_controller">날짜 선택</div>
           </div>
         </div>
@@ -83,7 +81,6 @@
         <div class="contents_wrap">
           <div class="sec_category">
             <h4>카테고리</h3>
-              <!-- 토글 -->
               <div class="toggle">
                 <input type="checkbox" id="switch">
                 <label for=""></label>
@@ -123,11 +120,10 @@
               <p>2025년</p>
               <button type="button" class="btn_right"></button>
             </div>
-
             <div class="chart_container">
               <div class="chart_container_body">
                 <div class="chart_wrap">
-                  <canvas id="stacked_chart" width="1400" height="400"></canvas>
+                  <canvas id="stacked_chart" width="1400" height=""></canvas>
                 </div>
               </div>
             </div>
