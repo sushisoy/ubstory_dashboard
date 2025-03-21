@@ -19,6 +19,7 @@
     gap: 2px;
   }
   .board {
+    max-width: calc(100% / 4 - 6px);
     flex-grow: 1;
     &:nth-of-type(1) {
       margin-left: 0;
@@ -26,7 +27,6 @@
     .top {
       display: flex;
       flex-wrap: nowrap;
-      min-width: calc(100% / 4 - 6px);
       padding: 17px 28px 19px 28px;
       background-color: #008ede;
       border-radius: 5px 5px 0 0;
@@ -38,7 +38,7 @@
       }
     }
     .bottom {
-      min-width: calc(100% / 4 - 6px);
+      flex-grow: 1;
       padding: 14px 32px 32px 28px;
       background-color: #019ef7;
       border-radius: 0 0 5px 5px;
@@ -1004,6 +1004,7 @@
       grid-row-gap: 4px;
     }
     .board {
+      min-width: 100%;
       .top {
         padding: 12px 40px 14px 40px;
         background-color: #008ede;

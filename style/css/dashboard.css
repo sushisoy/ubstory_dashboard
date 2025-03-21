@@ -20,6 +20,7 @@
   gap: 2px;
 }
 .inner_board .board {
+  max-width: calc(25% - 6px);
   flex-grow: 1;
 }
 .inner_board .board:nth-of-type(1) {
@@ -28,7 +29,6 @@
 .inner_board .board .top {
   display: flex;
   flex-wrap: nowrap;
-  min-width: calc(25% - 6px);
   padding: 17px 28px 19px 28px;
   background-color: #008ede;
   border-radius: 5px 5px 0 0;
@@ -40,7 +40,7 @@
   border-radius: 5px 12px 0 0;
 }
 .inner_board .board .bottom {
-  min-width: calc(25% - 6px);
+  flex-grow: 1;
   padding: 14px 32px 32px 28px;
   background-color: #019ef7;
   border-radius: 0 0 5px 5px;
@@ -929,6 +929,9 @@
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 4px;
     grid-row-gap: 4px;
+  }
+  .inner_board .board {
+    min-width: 100%;
   }
   .inner_board .board .top {
     padding: 12px 40px 14px 40px;
