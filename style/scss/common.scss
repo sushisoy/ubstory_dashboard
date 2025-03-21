@@ -3,30 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 html {
   height: 100%;
 }
-
 body {
   height: 100vh;
 }
-
 .inner {
   position: relative;
   display: flex;
   min-width: 100%;
   font-family: "NanumSquareNeo" !important;
-
-  h3 {
-    display: inline-block;
-    margin-bottom: 0;
-    color: #0e0e0e;
-    font-size: 20px;
-    font-family: "NanumSquareNeoExtraBold";
-    line-height: 30px;
-  }
-
   .logo {
     position: absolute;
     top: 24px;
@@ -61,13 +48,19 @@ body {
       content: "";
     }
   }
-
+  h3 {
+    display: inline-block;
+    margin-bottom: 0;
+    color: #0e0e0e;
+    font-size: 20px;
+    font-family: "NanumSquareNeoExtraBold";
+    line-height: 30px;
+  }
   aside {
     position: relative;
     width: 315px;
     flex-shrink: 0;
   }
-
   .sidebar {
     display: flex;
     flex-direction: column;
@@ -76,7 +69,6 @@ body {
     height: 100%;
     background-color: #1e1e2d;
   }
-
   .link_sidebar {
     display: block;
     width: 267px;
@@ -96,7 +88,6 @@ body {
       background-color: #f8a92f;
     }
   }
-
   .btn_sidebar {
     display: block;
     position: absolute;
@@ -120,19 +111,17 @@ body {
       transform: translateY(-50%);
     }
   }
-
   .btn_menu {
     display: none;
     cursor: pointer;
   }
-
+  // 대시보드 내비게이션 스타일
   .nav_inner {
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
     padding: 21px 0;
     background-color: #f1faff;
-
     .img_profile {
       width: 51px;
       height: 51px;
@@ -141,7 +130,7 @@ body {
       border-radius: 8px;
     }
   }
-
+  // 대시보드 웰컴 메세지 스타일
   .msg_welcome_wrap {
     display: flex;
     align-items: center;
@@ -179,7 +168,7 @@ body {
       }
     }
   }
-
+  // 대시보드 시스템 점검 메시지 스타일
   .system_notice {
     display: flex;
     align-items: center;
@@ -187,12 +176,10 @@ body {
     border: 1px solid #b8c1d6;
     border-radius: 12px;
     background-color: #fff;
-
     .ico_notice {
       width: 24px;
       height: 24px;
     }
-
     .text_system_notice {
       display: inline-block;
       margin-left: 24px;
@@ -200,7 +187,6 @@ body {
       color: #3e3e3e;
       font-size: 18px;
       font-family: "NanumSquareNeoBold";
-
       strong {
         color: #3e3e3e;
         font-size: 18px;
@@ -210,7 +196,6 @@ body {
         }
       }
     }
-
     .link_system_notice {
       margin-left: 18px;
       color: #019ef7;
@@ -219,11 +204,9 @@ body {
     }
   }
 }
-
 @media (max-width: 1499px) {
   .inner {
     flex-direction: column;
-
     .logo {
       position: absolute;
       top: 18px;
@@ -234,11 +217,9 @@ body {
         height: 45px;
       }
     }
-
     aside {
       width: 100%;
     }
-
     .btn_sidebar_ {
       display: none;
     }
@@ -261,34 +242,28 @@ body {
         height: 18px;
       }
     }
-
     .sidebar {
       width: 100%;
       height: 80px;
       background-color: #1e1e2d;
     }
-
     .link_sidebar {
       display: none;
     }
-
     .btn_sidebar {
       display: none;
     }
     .nav_inner {
       display: none;
     }
-
     .system_notice {
       padding: 16px 28px;
-
       .link_system_notice {
         margin-left: 18px;
       }
     }
   }
 }
-
 @media (max-width: 767px) {
   .inner {
     h3 {
@@ -380,11 +355,7 @@ body {
     }
   }
 }
-
-.cursor-pointer {
-  cursor: pointer;
-}
-
+// class inline style
 .blind {
   overflow: hidden;
   position: absolute;
@@ -392,35 +363,36 @@ body {
   left: 0;
   font-size: 0;
 }
-
-a {
+.cursor-pointer {
   cursor: pointer;
-  text-decoration: 0;
 }
-
+.flex {
+  display: flex;
+}
+.col_primary {
+  color: #f8a92f;
+}
+.col_blue {
+  color: #1897f4;
+}
+.ft-24 {
+  font-size: 24px;
+}
+.w-83 {
+  min-width: 83px;
+}
+.w-93 {
+  max-width: 93px;
+}
+.w-324 {
+  min-width: 324px;
+}
 .date {
   display: inline-block;
   color: #a1afbc;
-
   span {
     color: #a1afbc;
     font-size: 16px;
     font-family: "NanumSquareNeo";
   }
-}
-
-.flex {
-  display: flex;
-}
-
-.col_primary {
-  color: #f8a92f;
-}
-
-.col_blue {
-  color: #1897f4;
-}
-
-.ft-24 {
-  font-size: 24px;
 }

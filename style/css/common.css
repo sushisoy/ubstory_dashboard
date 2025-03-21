@@ -18,14 +18,6 @@ body {
   min-width: 100%;
   font-family: "NanumSquareNeo" !important;
 }
-.inner h3 {
-  display: inline-block;
-  margin-bottom: 0;
-  color: #0e0e0e;
-  font-size: 20px;
-  font-family: "NanumSquareNeoExtraBold";
-  line-height: 30px;
-}
 .inner .logo {
   position: absolute;
   top: 24px;
@@ -54,6 +46,14 @@ body {
   background: url("../../assets/images/logo.svg") no-repeat center/contain;
   transform: translateY(-50%);
   content: "";
+}
+.inner h3 {
+  display: inline-block;
+  margin-bottom: 0;
+  color: #0e0e0e;
+  font-size: 20px;
+  font-family: "NanumSquareNeoExtraBold";
+  line-height: 30px;
 }
 .inner aside {
   position: relative;
@@ -321,10 +321,6 @@ body {
     font-size: 12px;
   }
 }
-.cursor-pointer {
-  cursor: pointer;
-}
-
 .blind {
   overflow: hidden;
   position: absolute;
@@ -333,19 +329,8 @@ body {
   font-size: 0;
 }
 
-a {
+.cursor-pointer {
   cursor: pointer;
-  text-decoration: 0;
-}
-
-.date {
-  display: inline-block;
-  color: #a1afbc;
-}
-.date span {
-  color: #a1afbc;
-  font-size: 16px;
-  font-family: "NanumSquareNeo";
 }
 
 .flex {
@@ -362,4 +347,26 @@ a {
 
 .ft-24 {
   font-size: 24px;
+}
+
+.w-83 {
+  min-width: 83px;
+}
+
+.w-93 {
+  max-width: 93px;
+}
+
+.w-324 {
+  min-width: 324px;
+}
+
+.date {
+  display: inline-block;
+  color: #a1afbc;
+}
+.date span {
+  color: #a1afbc;
+  font-size: 16px;
+  font-family: "NanumSquareNeo";
 }/*# sourceMappingURL=common.css.map */

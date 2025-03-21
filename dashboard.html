@@ -67,17 +67,17 @@
                         <div class="board_wrap">
                             <div class="board">
                                 <div class="top first">
-                                    <img src="./assets/images/notice.svg" alt="">
-                                    <span>미처리</span>
+                                    <img src="./assets/images/notice.svg" class="ico_board_state" alt="">
+                                    <span class="text_board_state">미처리</span>
                                 </div>
                                 <div class="bottom first">
-                                    <div class="text_wrap">
+                                    <div class="board_text_wrap">
                                         <span class="subject">오늘</span>
                                         <span class="info">
                                             <strong>8</strong>건
                                         </span>
                                     </div>
-                                    <div class="text_wrap">
+                                    <div class="board_text_wrap">
                                         <span class="subject">이번 달</span>
                                         <span class="info">
                                             <strong>8</strong>건
@@ -87,17 +87,17 @@
                             </div>
                             <div class="board">
                                 <div class="top second">
-                                    <img src="./assets/images/plus.svg" alt="">
-                                    <span class="i_add">신규접수</span>
+                                    <img src="./assets/images/plus.svg" class="ico_board_state" alt="">
+                                    <span class="text_board_state">신규접수</span>
                                 </div>
                                 <div class="bottom second">
-                                    <div class="text_wrap">
+                                    <div class="board_text_wrap">
                                         <span class="subject">오늘</span>
                                         <span class="info">
                                             <strong>8</strong>건
                                         </span>
                                     </div>
-                                    <div class="text_wrap">
+                                    <div class="board_text_wrap">
                                         <span class="subject">이번 달</span>
                                         <span class="info">
                                             <strong>8</strong>건
@@ -107,17 +107,17 @@
                             </div>
                             <div class="board">
                                 <div class="top third">
-                                    <img src="./assets/images/ongoing.svg" alt="">
-                                    <span>작업진행</span>
+                                    <img src="./assets/images/ongoing.svg" class="ico_board_state" alt="">
+                                    <span class="text_board_state">작업진행</span>
                                 </div>
                                 <div class="bottom third">
-                                    <div class="text_wrap">
+                                    <div class="board_text_wrap">
                                         <span class="subject">오늘</span>
                                         <span class="info">
                                             <strong>8</strong>건
                                         </span>
                                     </div>
-                                    <div class="text_wrap">
+                                    <div class="board_text_wrap">
                                         <span class="subject">이번 달</span>
                                         <span class="info">
                                             <strong>8</strong>건
@@ -127,17 +127,17 @@
                             </div>
                             <div class="board">
                                 <div class="top last">
-                                    <img src="./assets/images/completed.svg" alt="">
-                                    <span>완료</span>
+                                    <img src="./assets/images/completed.svg" class="ico_board_state" alt="">
+                                    <span class="text_board_state">완료</span>
                                 </div>
                                 <div class="bottom last">
-                                    <div class="text_wrap">
+                                    <div class="board_text_wrap">
                                         <span class="subject">오늘</span>
                                         <span class="info">
                                             <strong>8</strong>건
                                         </span>
                                     </div>
-                                    <div class="text_wrap">
+                                    <div class="board_text_wrap">
                                         <span class="subject">이번 달</span>
                                         <span class="info">
                                             <strong>8</strong>건
@@ -148,16 +148,16 @@
                         </div>
                         <section class="current_area">
                             <div class="top">
-                                <div class="dropdown_wrap">
+                                <div class="current_dropdown_wrap">
                                     <h3>상태별 업무 현황</h3>
                                     <!-- [D] 활성화 시 : aria-expanded="true" -->
-                                    <div class="dropdown_box" aria-expanded="false">
-                                        <button type="button" class="btn_dropdown">모든 거래처</button>
-                                        <ul class="dropdown_list">
-                                            <li class="dropdown_item">제1관리팀 김길동 이사</li>
-                                            <li class="dropdown_item">제1관리팀 김길동 이사</li>
-                                            <li class="dropdown_item">제1관리팀 김길동 이사</li>
-                                            <li class="dropdown_item">제1관리팀 김길동 이사</li>
+                                    <div class="current_dropdown_box" aria-expanded="false">
+                                        <button type="button" class="btn_current_dropdown">모든 거래처</button>
+                                        <ul class="current_dropdown_list">
+                                            <li class="current_dropdown_item">제1관리팀 김길동 이사</li>
+                                            <li class="current_dropdown_item">제1관리팀 김길동 이사</li>
+                                            <li class="current_dropdown_item">제1관리팀 김길동 이사</li>
+                                            <li class="current_dropdown_item">제1관리팀 김길동 이사</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -187,17 +187,17 @@
                             <div class="bottom">
                                 <!-- [D] 버튼 클릭 시 "menu" 슬라이드 이동 -->
                                 <button type="button" class="btn_next"></button>
-                                <ul class="menu">
-                                    <li class="active">미처리 업무<span>12</span></li>
-                                    <li>총 처리 업무<span>24</span></li>
-                                    <li>접수 등록<span>8</span></li>
-                                    <li>접수 승인<span>7</span></li>
-                                    <li>작업 진행<span>9</span></li>
-                                    <li>완료 처리<span>9</span></li>
-                                    <li>보류<span>9</span></li>
+                                <ul class="grid_menu">
+                                    <li class="grid_header active">미처리 업무<span>12</span></li>
+                                    <li class="grid_header">총 처리 업무<span>24</span></li>
+                                    <li class="grid_header">접수 등록<span>8</span></li>
+                                    <li class="grid_header">접수 승인<span>7</span></li>
+                                    <li class="grid_header">작업 진행<span>9</span></li>
+                                    <li class="grid_header">완료 처리<span>9</span></li>
+                                    <li class="grid_header">보류<span>9</span></li>
                                 </ul>
                                 <div class="grid_list_wrap">
-                                    <ul class="grid_header">
+                                    <ul class="grid_inner_header">
                                         <li>거래처 명</li>
                                         <li>분류</li>
                                         <li>제목</li>
@@ -295,10 +295,10 @@
                         </section>
                     </div>
                     <div class="contents_right">
-                        <div class="wrap">
+                        <div class="contents_right_inner">
                             <section class="assignment_area">
                                 <div class="top">
-                                    <div class="wrap">
+                                    <div class="assign_text_wrap">
                                         <h3>업무 배정 현황</h3>
                                         <div class="date">
                                             <span>2025</span>.
@@ -309,20 +309,22 @@
                                     <div class="toggle">
                                         <!-- [D] 토글 스위치 활성화 시 : 'division' 클래스에 'active' 추가 -->
                                         <span class="division">요약</span>
-                                        <input type="checkbox" id="switch" name="switch" class="cursor-pointer"><label for="switch"></label>
+                                        <input type="checkbox" id="switch" name="switch" class="cursor-pointer">
+                                        <label for="switch"></label>
                                         <span class="division active">상세</span>
                                     </div>
                                 </div>
                                 <div class="bottom">
                                     <!-- [D] 토글로 UI 변경 시 : "is-show" 클래스 추가 -->
-                                    <div class="data summary is-show">
-                                        <div class="option_dropdown_area">
+                                    <div class="data summary">
+                                        <div class="assign_dropdown_area">
                                             <!-- [D] 활성화 시 : aria-expanded="true" -->
-                                            <div class="option_dropdown_wrap" aria-expanded="true">
-                                                <button type="button" class="btn_option_dropdown">제 2 관리팀</button>
-                                                <ul class="option_dropdown_list">
-                                                    <li class="option_dropdown_item">제 2 관리팀</li>
-                                                    <li class="option_dropdown_item">제 2 관리팀</li>
+                                            <div class="assign_dropdown_wrap" aria-expanded="true">
+                                                <button type="button" class="btn_assign_dropdown">제 2 관리팀</button>
+                                                <ul class="assign_dropdown_list">
+                                                    <li class="assign_dropdown_item">제 2 관리팀</li>
+                                                    <li class="assign_dropdown_item">제 2 관리팀</li>
+
                                                 </ul>
                                                 <div class="division">
                                                     <span>배정 건</span>
@@ -333,31 +335,38 @@
                                         <canvas id="summary_chart"></canvas>
                                     </div>
                                     <div class="data details">
-                                        <div class="option_dropdown_area">
+                                        <div class="assign_dropdown_area">
                                             <!-- [D] 활성화 시 : aria-expanded="true" -->
-                                            <div class="option_dropdown_wrap" aria-expanded="true">
-                                                <button type="button" class="btn_option_dropdown">제 2 관리팀</button>
-                                                <ul class="option_dropdown_list">
-                                                    <li class="option_dropdown_item">제 2 관리팀</li>
-                                                    <li class="option_dropdown_item">제 2 관리팀</li>
+                                            <div class="assign_dropdown_wrap" aria-expanded="true">
+                                                <button type="button" class="btn_assign_dropdown">제 2 관리팀</button>
+                                                <ul class="assign_dropdown_list">
+                                                    <li class="assign_dropdown_item">제 2 관리팀</li>
+                                                    <li class="assign_dropdown_item">제 2 관리팀</li>
+                                                    <li class="assign_dropdown_item">제 2 관리팀</li>
+                                                    <li class="assign_dropdown_item">제 2 관리팀</li>
+                                                    <li class="assign_dropdown_item">제 2 관리팀</li>
+                                                    <li class="assign_dropdown_item">제 2 관리팀</li>
+                                                    <li class="assign_dropdown_item">제 2 관리팀</li>
+                                                    <li class="assign_dropdown_item">제 2 관리팀</li>
+                                                    <li class="assign_dropdown_item">제 2 관리팀</li>
                                                 </ul>
                                             </div>
-                                            <div class="option_dropdown_wrap" aria-expanded="false">
-                                                <button type="button" class="btn_option_dropdown">제 2 관리팀</button>
-                                                <ul class="option_dropdown_list">
-                                                    <li class="option_dropdown_item">제 2 관리팀</li>
-                                                    <li class="option_dropdown_item">제 2 관리팀</li>
+                                            <div class="assign_dropdown_wrap" aria-expanded="false">
+                                                <button type="button" class="btn_assign_dropdown">제 2 관리팀</button>
+                                                <ul class="assign_dropdown_list">
+                                                    <li class="assign_dropdown_item">제 2 관리팀</li>
+                                                    <li class="assign_dropdown_item">제 2 관리팀</li>
                                                 </ul>
                                             </div>
-                                            <div class="option_dropdown_wrap" aria-expanded="false">
-                                                <button type="button" class="btn_option_dropdown">제 2 관리팀</button>
-                                                <ul class="option_dropdown_list">
-                                                    <li class="option_dropdown_item">제 2 관리팀</li>
-                                                    <li class="option_dropdown_item">제 2 관리팀</li>
+                                            <div class="assign_dropdown_wrap" aria-expanded="false">
+                                                <button type="button" class="btn_assign_dropdown">제 2 관리팀</button>
+                                                <ul class="assign_dropdown_list">
+                                                    <li class="assign_dropdown_item">제 2 관리팀</li>
+                                                    <li class="assign_dropdown_item">제 2 관리팀</li>
                                                 </ul>
                                             </div>
                                         </div>
-                                        <ul class="state">
+                                        <ul class="list_state_info">
                                             <li>
                                                 <span class="subject">총 배정 건 수</span>
                                                 <span class="info"><strong>24</strong>건</span>
@@ -376,7 +385,6 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <!-- 요약 현황 UI 작업 예정-->
                                 </div>
                             </section>
                             <section class="completed_area">
@@ -391,7 +399,7 @@
                                         <span class="time">34</span>
                                     </div>
                                 </div>
-                                <div class="info_wrap">
+                                <div class="completed_text_wrap">
                                     <span class="bg_grey">접수</span>
                                     <span><strong>710</strong> 건</span>
                                     <span class="bg_blue">완료</span>
@@ -417,9 +425,9 @@
                         <section class="notice_area">
                             <div class="top">
                                 <h3>공지사항</h3>
-                                <a href="">모두 보기</a>
+                                <a href="" class="link_notice_all">모두 보기</a>
                             </div>
-                            <ul>
+                            <ul class="notice_list">
                                 <li>
                                     <p>25.03.11 ~ 시스템 점검 예정</p>
                                     <span>2022.12.12</span>
